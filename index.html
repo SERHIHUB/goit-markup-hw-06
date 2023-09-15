@@ -42,6 +42,13 @@
             </li>
           </ul>
         </nav>
+
+        <button class="header-close-btn" type="button">
+          <svg class="header-close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+
         <address class="contact">
           <ul class="contact__list">
             <li class="contact__item header-link">
@@ -56,6 +63,7 @@
             </li>
           </ul>
         </address>
+
       </div>
     </header>
 
@@ -74,7 +82,7 @@
       <!-- ========== section SKILLS ========== -->
 
       <section class="section skills">
-        <div class="container">
+        <div class="container skills-container">
           <h2 class="visually-hidden">Skills</h2>
           <ul class="skills-list">
             <li class="skills-item">
@@ -137,13 +145,14 @@
           <ul class="team__list">
             <li class="team__item">
               <img
+              srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="man with a beard"
                 width="264"
                 height="260"
               />
               <div class="team-box">
-                <h3 class="team-title">Mark Guerrero</h3>
+                <h3 class="team-title title">Mark Guerrero</h3>
                 <p class="team-text text">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -179,13 +188,14 @@
             </li>
             <li class="team__item">
               <img
+              srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="the man smiles"
                 width="264"
                 height="260"
               />
               <div class="team-box">
-                <h3 class="team-title">Tom Ford</h3>
+                <h3 class="team-title title">Tom Ford</h3>
                 <p class="team-text text">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -221,13 +231,14 @@
             </li>
             <li class="team__item">
               <img
+              srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="woman"
                 width="264"
                 height="260"
               />
               <div class="team-box">
-                <h3 class="team-title">Camila Garcia</h3>
+                <h3 class="team-title title">Camila Garcia</h3>
                 <p class="team-text text">Marketing</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -263,13 +274,14 @@
             </li>
             <li class="team__item">
               <img
+              srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="man"
                 width="264"
                 height="260"
               />
               <div class="team-box">
-                <h3 class="team-title">Daniel Wilson</h3>
+                <h3 class="team-title title">Daniel Wilson</h3>
                 <p class="team-text text">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-item">
@@ -316,6 +328,8 @@
             <li class="portfolio__item">
               <div class="overlay-box">
                 <img
+                class="portfolio-img"
+                srcset="./images/addition.jpg 1x, ./images/addition@2x.jpg 2x"
                   src="./images/addition.jpg"
                   alt="banking"
                   width="360"
@@ -335,6 +349,8 @@
             <li class="portfolio__item">
               <div class="overlay-box">
                 <img
+                class="portfolio-img"
+                srcset="./images/mobile_qr.jpg 1x, ./images/mobile_qr@2x.jpg 2x"
                   src="./images/mobile_qr.jpg"
                   alt="qr code"
                   width="360"
@@ -354,6 +370,8 @@
             <li class="portfolio__item">
               <div class="overlay-box">
                 <img
+                class="portfolio-img"
+                srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
                   src="./images/laptop.jpg"
                   alt="laptop"
                   width="360"
@@ -373,6 +391,8 @@
             <li class="portfolio__item">
               <div class="overlay-box">
                 <img
+                class="portfolio-img"
+                srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
                   src="./images/taxi.jpg"
                   alt="the driver behind the whils"
                   width="360"
@@ -392,6 +412,8 @@
             <li class="portfolio__item">
               <div class="overlay-box">
                 <img
+                class="portfolio-img"
+                srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
                   src="./images/screen.jpg"
                   alt="phone"
                   width="360"
@@ -411,6 +433,8 @@
             <li class="portfolio__item">
               <div class="overlay-box">
                 <img
+                class="portfolio-img"
+                srcset="./images/courses.jpg 1x, ./images/courses@2x.jpg 2x"
                   src="./images/courses.jpg"
                   alt="girl in orange"
                   width="360"
@@ -508,6 +532,90 @@
       </div>
     </footer>
 
+
+    <!-- =============== MOBILE MENU =============== -->
+
+    <!-- is-open -->
+    <div class="mobile-menu-wrapper">
+      <div class="mobile-menu-container">
+
+        <button type="button" class="modal-cloce-btn">
+          <svg class="cloce-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+          <div class="mobile-navigation">
+            <ul class="navigation-mobile-list">
+                <li class="navigation-mobile-item">
+                  <a href="./index.html" class="navigation-mobile-link mobile-link"
+                    >Studio</a
+                  >
+                </li>
+                <li class="navigation-mobile-item">
+                  <a href="" class="navigation-mobile-link mobile-link">Portfolio</a>
+                </li>
+                <li class="navigation-mobile-item overlay-link">
+                  <a href="" class="navigation-mobile-link mobile-link">Contacts</a>
+                </li>
+              </ul>
+              </nav>
+          </div>
+
+          <div>
+                 <div class="mobile-contact mobile-container">
+                    <ul class="contact-mobile-list">
+                        <li class="contact-mobile__item">
+                            <a class="contact-mobile-link mobile-link" href="mailto:info@devstudio.com"
+                              >info@devstudio.com</a
+                            >
+                        </li>
+                        <li class="contact-mobile__item">
+                          <a class="contact-mobile__link mobile-link" href="tel:+110001111111"
+                            >+11 (000) 111-11-11</a
+                          >
+                        </li>
+                    </ul>
+                 </div>
+
+                <div class="mobile-social mobile-container">
+                      <ul class="social-mobile-list">
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                              <svg class="team-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                              <svg class="team-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="" class="social-link">
+                              <svg class="team-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                              <a href="" class="social-link">
+                                <svg class="team-svg" width="16" height="16">
+                                  <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                              </a>
+                          </li>
+                       </ul>
+                </div>
+          </div>
+      
+      </div>
+    </div>
+    
+
     <!-- ========== MODAL ========== -->
 
     <div class="modal-container is-hidden">
@@ -598,6 +706,5 @@
         </form>
       </div>
     </div>
-    <!-- ===== -->
   </body>
 </html>
